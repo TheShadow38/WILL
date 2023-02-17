@@ -14,7 +14,16 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  let cont =0;
+  for(let i=0; i<amigos.length; i++){
+    if(amigos[i].nombre == nombre){
+      return amigos[i];
+      cont += 1;
+    }
+  }
+  if(cont==0){
+    return "Nombre No Existe"; // ESTE EJERCICIO FUNCIONA OKEY.
+  }
 }
 
 // No modifiques nada debajo de esta linea //

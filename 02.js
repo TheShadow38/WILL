@@ -12,6 +12,34 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  /*let longArray = 0;
+  let result = "";
+  for(let i=0; i<strings.length; i++){
+    if(strings[i].length > longArray){
+      longArray = strings[i].length;
+      result = strings[i];
+    }
+  }
+  return result; ESTE CODIGO FUNCIONA Okey.
+  */
+  /*let result = "";
+  for(let i=0; i<strings.length - 1; i++){
+    if(strings[i + 1].length > strings[i].length){
+      longArray = strings[i].length;
+      result = strings[i + 1];
+    }
+  }
+  return result;   FUNCIONA CON ERRORES
+  */
+  let longArray = "";
+  for(const str of strings){
+    if(str.length > longArray.length)
+    longArray = str;
+  }
+  return longArray;
+  //result = strings.reduce((a, b) => a.length > b.length ? a : b);
+  //return result; FUNCIONA ok.
+
 }
 
 // No modifiques nada debajo de esta linea //

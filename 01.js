@@ -11,7 +11,14 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  var newArray = [];
+  array.map(Value => {
+    if(typeof(Value) == "number"){
+      newArray.push(Value)
+    }
+  });
+  return newArray;
+  
 }
 
 // No modifiques nada debajo de esta linea //
